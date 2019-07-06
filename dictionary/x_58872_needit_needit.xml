@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="1" type="collection">
+        <element default="20" label="New number" max_length="40" name="u_integer_1" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for" mandatory="true" max_length="40" name="u_requested_for" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested type" mandatory="true" max_length="40" name="u_request_type" type="string"/>
+        <element label="New Name-Value Pairs" max_length="4000" name="u_simple_name_values_2" type="simple_name_values"/>
+        <element label="New Name-Value Pairs" mandatory="true" max_length="4000" name="u_simple_name_values_3" type="simple_name_values"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="when needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
